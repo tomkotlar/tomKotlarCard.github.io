@@ -1,1 +1,82 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@coreui/icons@1.0.0-beta.0/css/brand.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/0c5d975f1f.js"
+      crossorigin="anonymous" defer>
+    </script>
+    <script src="./index.js" defer></script>
+    <title>Tom Kotlar</title>
+  </head>
+
+  <body onload="myFunction()" style="margin:0;">
+    <div class="loader">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+      <div class="card">
+        <div class="banner">
+          <div class="avatar"></div> 
+          <!-- Photo by Mads Schmidt Rasmussen -->
+        </div>
+        <h1>Tom Kotlar</h1>
+        <p>full stack developer</p>
+
+        <p id="about">
+          I am a passionate junior developer who is seeking a new challenge and
+          opportunity to improve skills and knowledge.
+        </p>
+        <a href="">📫 t.kotlar@yahoo.com</a>
+
+        <ul>
+          <a href="https://github.com/tomkotlar" target="_blank">
+            <i class="fab fa-github" style="font-size:30px"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/tom-kotlar-ab15b1198/"
+            target="_blank">
+            <i class="fab fa-linkedin-in" style="font-size:30px"></i>
+          </a>
+          <a href="https://codesandbox.io/u/tomkotlar" target="_blank">
+            <i class="cib-codesandbox" style="font-size:30px"></i>
+          </a>
+          <a href="https://dribbble.com/tomkotlar" target="_blank">
+            <i class="fab fa-dribbble" style="font-size:30px"></i>
+          </a>
+        </ul>
+
+        <ul class="software">
+          <li><i class="fab fa-node-js"></i></li>
+          <li><i class="fab fa-react"></i></li>
+          <li><i class="fab fa-js"></i></li>
+          <li><i class="fab fa-git-alt"></i></li>
+          <li><i class="cib-postgresql"></i></li>
+
+          <li><i class="cib-adobe-xd"></i></li>
+        </ul>
+
+        <div class="button">
+          <p id="text">
+            <a
+              href="https://drive.google.com/file/d/1y5v5FnV605yIpbIgjypKb3LdRgLtlbkR/view?usp=sharing"
+              target="_blank"
+              ><i class="far fa-file"></i> Resume
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

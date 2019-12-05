@@ -7,9 +7,7 @@ Personal Web Card [Tom Kotlar](https://tomkotlar.github.io/tomKotlarCard.github.
 ## Info
 
 
-For this project I used HTML, CSS and JS.
-You can vist my personnal links on social media / icons, check my Resume and contact me via @email
-Toggle the light / dark theme
+For this project, I used HTML, CSS and JS. You can visit my Personal links on social media/icons, check my Resume and contact me via @email Toggle the light / dark theme
 
 
 

@@ -12,6 +12,8 @@ body {
   align-items: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  transition: background 0.2s linear;
 }
 
 .loader {
@@ -205,25 +207,6 @@ ul a i:hover {
   text-decoration: none;
 }
 
-/* .software li:nth-child(1) {
-  color: #68A063
-}
-.software li:nth-child(2) {
-  color: #61DBFB
-}
-.software li:nth-child(3) {
-  color: #F0DB4F
-}
-.software li:nth-child(4) {
-  color: #211F1F
-}
-.software li:nth-child(5) {
-  color: #336791;
-}
-.software li:nth-child(6) {
-  color: #E749A0
-} */
-
 .button {
   display: inline-block;
   background-color: #fafafa;
@@ -236,17 +219,116 @@ ul a i:hover {
   font-size: 18px;
 }
 
-.button:hover,
-a:hover {
-  opacity: 0.7;
-  color: #2980b9;
-  text-decoration: none;
-  background-color: transparent;
-}
-
 @media only screen and (max-width: 600px) {
   body {
     background-color: white;
     height: 100%;
   }
 }
+
+.checkbox {
+  opacity: 0;
+	position: absolute;
+}
+
+.label {
+  background-color: rgb(140, 140, 140);
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+
+}
+
+.ball {
+  background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+  background-color: #ffffff;
+}
+
+.fa-moon{
+  color: #E9FF08;
+}
+
+.fa-sun {
+  color:#FFD305
+}
+
+.toggle {
+  display: flex;
+  float: right;
+  padding-top: 5px;
+  padding-right: 20px;
+  margin: 0;
+} 
+
+
+/*              dark theeme                  */
+
+/* body.dark {
+  background: #292C35;
+} */
+.checkbox:checked + .label {
+  background-color:rgb(111, 111, 111)
+}
+
+body.dark  .card  {
+  background-color: #0D0E10;
+  transition: background 0.2s linear;
+} 
+
+body.dark .card .banner {
+  background-image: url("./images/sean-kowal-IbngTBpNuMA-unsplash.jpg");
+  transition: background 0.2s ;
+}
+
+body.dark .social a i{
+  color: #21A6A6
+}
+
+body.dark .software li{
+  color: #21A6A6
+}
+
+body.dark h1{
+  color: whitesmoke
+}
+
+body.dark p{
+  color: whitesmoke
+}
+
+body.dark .button{
+  background-color:  rgb(25, 26, 29);
+}
+
+body.dark ul a i:hover {
+  opacity: 1;
+  color: #30F2F2
+}
+
+body.dark  .button:hover,
+a:hover {
+  opacity: 0.7;
+  color: hotpink;
+  background-color: transparent;
+  text-decoration: none;
+  
+}
+
